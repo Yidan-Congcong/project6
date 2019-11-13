@@ -68,8 +68,8 @@
 
         searchTrigger.on('click', function(e) {
             
-            e.preventDefault();
-            e.stopPropagation();
+            //e.preventDefault();
+            //e.stopPropagation();
         
             var $this = $(this);
         
@@ -84,7 +84,7 @@
 
             var $this = $(this);
         
-            e.stopPropagation(); 
+            //e.stopPropagation(); 
         
             if(siteBody.hasClass('search-is-visible')){
                 siteBody.removeClass('search-is-visible');
@@ -96,12 +96,12 @@
 
         searchWrap.on('click',  function(e) {
             if( !$(e.target).is('.search-field') ) {
-                closeSearch.trigger('click');
+                //closeSearch.trigger('click');
             }
         });
             
         searchField.on('click', function(e){
-            e.stopPropagation();
+            //e.stopPropagation();
         });
             
         searchField.attr({placeholder: 'Type Keywords', autocomplete: 'off'});
