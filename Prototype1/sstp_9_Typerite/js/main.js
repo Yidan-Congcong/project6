@@ -103,7 +103,18 @@
         searchField.on('click', function(e){
             //e.stopPropagation();
         });
-            
+        
+        function fuzzyQuery(list, keyWord) {
+            var reg =  new RegExp(keyWord);
+            var arr = [];
+            for (var i = 0; i < list.length; i++) {
+              if (reg.test(list[i])) {
+                arr.push(list[i]);
+              }
+            }
+            return arr;
+        }
+          
         searchField.attr({placeholder: 'Type Keywords', autocomplete: 'off'});
 
     };
