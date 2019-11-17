@@ -2231,7 +2231,7 @@ input::-moz-focus-inner {
 }
 
 .header__nav li.has-children {
-  padding-right: 3.3rem;
+  padding-right: 0rem;
 }
 
 .header__nav li.has-children > a::after {
