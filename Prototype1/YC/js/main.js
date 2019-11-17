@@ -3,7 +3,7 @@
  *
  * ------------------------------------------------------------------- */
 
-(function($) {
+(function($) { 
 
     "use strict";
     
@@ -103,7 +103,8 @@
         searchField.on('click', function(e){
             //e.stopPropagation();
         });
-        
+        var a = document.getElementsByName("s");
+        //alert(a[0].placeholder);
         function fuzzyQuery(list, keyWord) {
             var reg =  new RegExp(keyWord);
             var arr = [];
@@ -114,7 +115,7 @@
             }
             return arr;
         }
-          
+
         searchField.attr({placeholder: 'Type Keywords', autocomplete: 'off'});
 
     };
