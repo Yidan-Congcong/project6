@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/upload.css">
 
     <!-- script
     ================================================== -->
@@ -139,21 +140,29 @@
                 
                 <article class="column large-full entry format-standard">
 
-                    <div class="media-wrap entry__media">
-                        <div class="entry__post-thumb">
-                            <img src="images/thumbs/single/standard/standard-1000.jpg" 
-                                 srcset="images/thumbs/single/standard/standard-2000.jpg 2000w, 
-                                         images/thumbs/single/standard/standard-1000.jpg 1000w, 
-                                         images/thumbs/single/standard/standard-500.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
-                        </div>
+                <div class="upload-content">
+                    <div class="content-img">
+                        <ul class="content-img-list">
+                            
+                        </ul>
+                        <div class="file">
+                            <i class="ico-plus"></i>Upload images - jpg/png<input type="file" name="file" accept="image/*" id="upload" >
+                        </div>  
                     </div>
+                    <div class="upload-tips">
+                        No more than 3 images，up to 1MB
+                    </div>
+                </div>
+                <div class="upload-submit">
+                     <a href="javascript:;" id="btn-submit-upload" class="btn-submit-upload">Submit</a>
+                </div>
                 <div class="comments-wrap">
                     <div class="column large-12 comment-respond">
 
                         <!-- START respond -->
                         <div id="respond">
             
-                            <h3 class="h2">Write Your Text</h3>
+                            <h3 class="h2">Write Your Post</h3>
             
                             <form name="contactForm" id="contactForm" method="post" action="" autocomplete="off">
                                 <fieldset>
@@ -207,5 +216,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/upload.js"></script>
+
 
 </body>
