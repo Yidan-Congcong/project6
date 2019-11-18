@@ -105,16 +105,6 @@
         });
         var a = document.getElementsByName("s");
         //alert(a[0].placeholder);
-        function fuzzyQuery(list, keyWord) {
-            var reg =  new RegExp(keyWord);
-            var arr = [];
-            for (var i = 0; i < list.length; i++) {
-              if (reg.test(list[i])) {
-                arr.push(list[i]);
-              }
-            }
-            return arr;
-        }
 
         searchField.attr({placeholder: 'Type Keywords', autocomplete: 'off'});
 
@@ -151,6 +141,8 @@
                 .slideUp(200);
 
         });
+
+
     };
 
 
